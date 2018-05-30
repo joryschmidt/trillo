@@ -15,7 +15,8 @@ COLORS
   --dark-grey-1: #333;
   --dark-grey-2: #777;
   --dark-grey-3: #999;
-  --dark-shadow: 0 2rem 6rem rgba(0,0,0, 0.4); }
+  --dark-shadow: 0 2rem 6rem rgba(0,0,0, 0.4);
+  --border-line: 1px solid var(--light-grey-2); }
 
 * {
   margin: 0;
@@ -47,7 +48,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--light-grey-1);
+  border-bottom: var(--border-line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -66,6 +67,21 @@ body {
   background-color: #fff;
   flex: 1;
   height: 80rem; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--light-grey-1);
+  border-bottom: var(--border-line); }
+
+.description {
+  background-color: orangered;
+  flex: 0 0 60%;
+  margin-right: 4.5rem; }
+
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1; }
 
 .logo {
   height: 3.25rem;
@@ -199,7 +215,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--light-grey-2); }
+  border-bottom: var(--border-line); }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
