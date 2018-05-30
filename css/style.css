@@ -47,7 +47,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: solid 2px var(--light-grey-1);
+  border-bottom: 1px solid var(--light-grey-1);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -63,7 +63,7 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
-  background-color: orangered;
+  background-color: #fff;
   flex: 1;
   height: 80rem; }
 
@@ -188,3 +188,64 @@ body {
   color: var(--light-grey-4);
   text-align: center;
   padding: 2.5rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--light-grey-2); }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex; }
+  .overview__icon-star, .overview__icon-pin {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--primary-color); }
+  .overview__icon-pin {
+    margin-right: .5rem; }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center; }
+  .overview__rating {
+    background-color: var(--primary-color);
+    margin-left: 3rem;
+    color: #fff;
+    padding: 0 2.25rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .overview__rating-average {
+      font-size: 2.25rem;
+      font-weight: 300;
+      margin-bottom: -3px; }
+    .overview__rating-count {
+      font-size: .8rem;
+      text-transform: uppercase; }
+
+.btn-inline {
+  border: none;
+  color: var(--primary-color);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn-inline:hover {
+    color: var(--dark-grey-1); }
