@@ -490,10 +490,6 @@
     left: 0;
   }
   
-  &:hover {
-    background-image: linear-gradient(to left, var(--primary-color-light), var(--primary-color-dark));
-  }
-  
   &:hover &__visible {
     transform: translateY(100%);
   }
