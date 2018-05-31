@@ -42,8 +42,7 @@ body {
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--light-grey-2);
-  box-shadow: var(--dark-shadow);
-  min-height: 80rem; }
+  box-shadow: var(--dark-shadow); }
 
 .header {
   font-size: 1.4rem;
@@ -80,7 +79,10 @@ body {
   box-shadow: var(--light-shadow);
   padding: 3rem;
   flex: 0 0 60%;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
 
 .user-reviews {
   flex: 1;
