@@ -374,6 +374,10 @@
     transition: margin-left .2s;
   }
   
+  &:focus {
+    outline: none;
+  }
+  
   &:hover {
     color: var(--dark-grey-1);
     
@@ -422,15 +426,18 @@
     margin-right: .7rem;
     
     // for older browsers
-    // background-image: url(../img/SVG/chevron-thin-right.svg);
-    // background-size: cover;
+    background-image: url(../img/SVG/chevron-thin-right.svg);
+    background-size: cover;
     
     // masks for newer browsers
-    background-color: var(--primary-color);
-    -webkit-mask-image: url(../img/SVG/chevron-thin-right.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(../img/SVG/chevron-thin-right.svg);
-    mask-size: cover;
+    @supports(-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--primary-color);
+      background-image: none;
+      -webkit-mask-image: url(../img/SVG/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/SVG/chevron-thin-right.svg);
+      mask-size: cover;
+    }
   }
 }
 
